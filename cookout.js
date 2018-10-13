@@ -1,5 +1,5 @@
-Practice: Cookout
-Copy the following objects into your JavaScript file.
+// Practice: Cookout
+// Copy the following objects into your JavaScript file.
 
 const hamburger = {
 	name: 'Hamburger',
@@ -27,14 +27,11 @@ const steak = {
 	cooked: false,
 }
 
-// An first array containing the objects to be cooked.
 const uncookedFood = [hamburger, zucchini, chickenBreast, corn, steak];
-
-// An empty array that will store the objects after the `grill()` function cooks the food.
 const cookedFood = [];
-This exercise does not require you to alter this function. But read it. See if you can follow what it takes in, executes, and returns.
+// This exercise does not require you to alter this function. But read it. See if you can follow what it takes in, executes, and returns.
 
-The grill() function. Copy this into your JavaScript as well.
+// The grill() function. Copy this into your JavaScript as well.
 
 function grill (currentObject) {
     // Modify the food so that it is cooked
@@ -43,4 +40,20 @@ function grill (currentObject) {
     // Put the cooked food into the appropriate array
     cookedFood.push(currentObject);
 };
-Your task is to iterate over the array of uncookedFood and invoke the function for each item so that the cookedFood array contains all of the items after they are cooked.
+
+// this:
+for (i = 0; i < uncookedFood.length; i++) {
+  grill(uncookedFood[i]);
+}
+
+// or this:
+uncookedFood.forEach(element => {
+  grill(element)
+});
+
+// or this:
+uncookedFood.forEach(function(element) {
+  grill(element);
+});
+
+// Your task is to iterate over the array of uncookedFood and invoke the function for each item so that the cookedFood array contains all of the items after they are cooked.
