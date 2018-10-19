@@ -12,7 +12,7 @@ function addExcitement (theWordArray) {
 
 // EXCITING WORDS
 
-function addExcitement (theWordArray, punc) {
+function addExcitement2 (theWordArray, punc) {
   for (let i = 0; i < theWordArray.length; i++) {
     if (i !== 0 && i % 3 === 0) {
       buildMeUp += theWordArray[i] + punc + " ";
@@ -27,7 +27,7 @@ function addExcitement (theWordArray, punc) {
 
 // ARROW FUNC
 
-addExcitement = (theWordArray, punc) => {
+addExcitement2 = (theWordArray, punc) => {
   for (let i = 0; i < theWordArray.length; i++) {
     if (i !== 0 && i % 3 === 0) {
       buildMeUp += theWordArray[i] + punc + " ";
