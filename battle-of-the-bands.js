@@ -9,6 +9,9 @@ const takeNumber = function (bandName) {
     */
 }
 
+takeNumber("Radiohead")
+takeNumber("Metallica")
+// etc
 
 // Your job is to write a function that accepts any band name as an argument. The function will increment a global variable by one each time it is invoked, and return that number, and the band name concatenated together.
 
